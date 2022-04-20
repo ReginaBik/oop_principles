@@ -49,7 +49,6 @@ public class FoodTest {
 
         int count2 = 0;
 
-        allFoods.stream().forEach(food -> food.name.length() > 5);
 
 
 
