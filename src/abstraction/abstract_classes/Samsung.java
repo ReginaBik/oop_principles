@@ -1,6 +1,6 @@
 package abstraction.abstract_classes;
 
-public class Samsung extends Phone{
+public class Samsung extends Phone implements Camera, BlueTooth{
 
     public Samsung() {
     }
@@ -33,4 +33,16 @@ public class Samsung extends Phone{
     public boolean isConvertible() {
         return false;
     }
+
+    @Override
+    public void takesPhoto() {
+        System.out.println("Samsung takes photo");
+
+    }
+
+    @Override
+    public void connectBlueTooth() {
+        System.out.println("Samsung connects to BlueTooth");
+    }
+
 }
